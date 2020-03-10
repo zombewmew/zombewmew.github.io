@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Citibank</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link type="text/css" href="./css/main.css" rel="stylesheet">
+    
+</head>
+<body>
+
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()"></span>
+        <h6 class="modal-header">External link</h6>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo</p>
+        <div class="decision">
+            <a class="link" onclick="closeModal()">Cancel</a>
+            <button class="btn" onclick="closeModal()">Accept</button>
+        </div>
+    </div>
+</div>
+
+<section class="banner">
+    <div class="content banner-container">
+        <div class="banner-text">
+            <h1 class="banner-header">Banner head</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed <br>
+                do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>
+                Ut enim ad minim veniam, quis nostrud</p>
+        </div>
+        <div class="request">
+            <h4 class="request-header">Request form</h4>
+            <form id="request" novalidate>
+                <input type="email" id="email" name="email" placeholder="Enter your E-Mail"  data-placement="bottom" title="Enter correct E-Mail" required>
+                <input type="text" id="name" name="name" placeholder="Enter your name"  data-placement="bottom" title="Enter correct name" required>
+
+                <div class="select">
+                    <select id="select">
+                        <option value="0">Select yout country:</option>
+                        <option value="c1">Country 1</option>
+                        <option value="c2">Country 2</option>
+                    </select>
+                </div>
+                <label class="term">I agree with Terms & Conditions
+                    <input type="checkbox" id="checkbox" required>
+                    <span class="checkmark"></span>
+                </label>
+
+                <div>
+                    <button class="btn">Submit</button>
+                    <a class="link">Hyperlink</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="content">
+        <div class="cards">
+            <div class="row">
+                <div class="item">
+                    <img class="img-card" src="./img/card1.png" alt="card1" />
+                    <div class="overlay">
+                        <div class="header-overlay">
+                            <h3 class="post-header">Post header 1</h3>
+                            <img src="./img/icon.png" alt="icon" class="icon" />
+                        </div>
+                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="img-card" src="./img/card2.png" alt="card2" />
+                    <div class="overlay">
+                        <div class="header-overlay">
+                            <h3 class="post-header">Post header 2</h3>
+                            <img src="./img/icon.png" alt="icon" class="icon" />
+                        </div>
+                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="img-card" src="./img/card3.png" alt="card3" />
+                    <div class="overlay">
+                        <div class="header-overlay">
+                            <h3 class="post-header">Post header 3</h3>
+                            <img src="./img/icon.png" alt="icon" class="icon" />
+                        </div>
+                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="item">
+                    <img class="img-card" src="./img/card4.png" alt="card4" />
+                    <div class="overlay">
+                        <div class="header-overlay">
+                            <h3 class="post-header">Post header 4</h3>
+                            <img src="./img/icon.png" alt="icon" class="icon" />
+                        </div>
+                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="img-card" src="./img/card5.png" alt="card5" />
+                    <div class="overlay">
+                        <div class="header-overlay">
+                            <h3 class="post-header">Post header 5</h3>
+                            <img src="./img/icon.png" alt="icon" class="icon" />
+                        </div>
+                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="promo-bg">
+    <div class="content promo">
+        <div class="monitor">
+            <img src="./img/mac.png" alt="mac"/>
+        </div>
+        <div class="description">
+            <h2 class="title-header">Title text</h2>
+            <ol class="list">
+                <li class="item-list">Duis aute irure dolor in reprehenderit<sup>1</sup> in voluptate velit</li>
+                <li class="item-list">Ullamco laboris nisi ut aliquip ex ea commodo consequat </li>
+                <li class="item-list">Ut enim ad minim veniam, quis nostrud exercitation </li>
+                <li class="item-list">Et dolore magna aliqua</li>
+                <li class="item-list">Sed doa eiusmod tempor<sup>2</sup> incididunt ut labore</li>
+                <li class="item-list">Lorem ipsum dolor sit amet<sup>3</sup> consectetur adipisicing elit</li>
+            </ol>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="content disclamers">
+        <p><sup>1</sup> Reprehenderit - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
+        <p><sup>2</sup> Tempor - Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p><sup>3</sup> Amet - Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    </div>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+<script src="./js/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+
+</body>
+</html>
