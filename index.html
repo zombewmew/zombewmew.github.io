@@ -2,151 +2,208 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Citibank</title>
+    <title>Space Game</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link type="text/css" href="./css/main.css" rel="stylesheet">
-    
+    <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script-->
+
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link type="text/css" href="style.css" rel="stylesheet">
+
 </head>
 <body>
-
-<div id="myModal" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal()"></span>
-        <h6 class="modal-header">External link</h6>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo</p>
-        <div class="decision">
-            <a class="link" onclick="closeModal()">Cancel</a>
-            <button class="btn" onclick="closeModal()">Accept</button>
+    <div class="wrapper">
+        <div class="child">
+        <div class="left">
+        </div>
+        <div class="left">
+        </div>
+        <div class="left">
+        </div>
+        <div class="left">
+        </div>
+        <div class="left">
+        </div>
+        <div class="left">
+        </div>
+        <div class="left">
+        </div>
+        <div class="left">
+        </div>
+        <div class="left">
+        </div>
+        <div class="left">
+        </div>
+        <div class="left">
+        </div>
+        <div class="left">
         </div>
     </div>
-</div>
-
-<section class="banner">
-    <div class="content banner-container">
-        <div class="banner-text">
-            <h1 class="banner-header">Banner head</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed <br>
-                do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>
-                Ut enim ad minim veniam, quis nostrud</p>
-        </div>
-        <div class="request">
-            <h4 class="request-header">Request form</h4>
-            <form id="request" novalidate>
-                <input type="email" id="email" name="email" placeholder="Enter your E-Mail"  data-placement="bottom" title="Enter correct E-Mail" required>
-                <input type="text" id="name" name="name" placeholder="Enter your name"  data-placement="bottom" title="Enter correct name" required>
-
-                <div class="select">
-                    <select id="select">
-                        <option value="0">Select yout country:</option>
-                        <option value="c1">Country 1</option>
-                        <option value="c2">Country 2</option>
-                    </select>
+    </div> 
+    <section class="video" id="video-bg">
+        <video width="100%" height="auto" autoplay="autoplay" loop="loop" preload="auto" poster="" autoplay muted>
+            <source src="./video/sky.mp4" type="video/mp4"></source>
+        </video>
+        <header class="header">
+            <div class="logo">
+                <img class="logo__img" src="./img/logo.png" alt="mini-logo">
+            </div>
+            <nav class="menu">
+                <ul class="list">
+                    <li class="list__item">News</li>
+                    <li class="list__item">Latest activity</li>
+                    <li class="list__item">Game video</li>
+                </ul>
+            </nav>
+            <div class="consoles-logo">
+                <div class="ps4">
+                    <img class="ps4__image" src="./img/ps4.png" alt="ps4">
                 </div>
-                <label class="term">I agree with Terms & Conditions
-                    <input type="checkbox" id="checkbox" required>
-                    <span class="checkmark"></span>
-                </label>
-
-                <div>
-                    <button class="btn">Submit</button>
-                    <a class="link">Hyperlink</a>
+                <div class="xbox">
+                    <img class="xbox__image"  src="./img/xbox.png" alt="xbox">
                 </div>
-            </form>
+            </div>
+        </header>
+        <div class="main-block">
+            <img class="main-block__img" src="./img/logo.png" alt="big-logo">
+            <p class="main-block__description">Play for free</p>
+            <div class="consoles">
+                <div class="xbox"><img src="./img/xbox.png" alt="xbox"></div>
+                <div class="ps4"><img src="./img/ps4.png" alt="ps4"></div>
+            </div>
         </div>
-    </div>
-</section>
-<section>
-    <div class="content">
-        <div class="cards">
-            <div class="row">
-                <div class="item">
-                    <img class="img-card" src="./img/card1.png" alt="card1" />
-                    <div class="overlay">
-                        <div class="header-overlay">
-                            <h3 class="post-header">Post header 1</h3>
-                            <img src="./img/icon.png" alt="icon" class="icon" />
-                        </div>
-                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+    </section>
+
+    <section>
+        <div class="container news-block">
+            <h2 class="title">What's new?</h2>
+            <p class="news-block__description">Description text</p>
+            <div class="news-list">
+                <div class="news" >
+                    <img src="./img/planeta-mars.jpg" alt="mars">
+                    <h4 class="news__title">Mars</h4>
+                    <div class="news-overlay">
+                        <div class="news-info">
+                            <h4 class="news-info__title">Title</h4>
+                            <p class="news-info__p">Astronomers have found the best evidence for the perpetrator of a cosmic homicide: a black hole of an elusive class known as "intermediate-mass," which betrayed its existence by tearing apart a wayward star that passed too close.</p>
+                            <div class="news-logos">
+                                <img src="./img/xbox.png" alt="xbox">
+                                <img src="./img/ps4.png" alt="ps4">
+                            </div>
+                        </div>  
                     </div>
                 </div>
-                <div class="item">
-                    <img class="img-card" src="./img/card2.png" alt="card2" />
-                    <div class="overlay">
-                        <div class="header-overlay">
-                            <h3 class="post-header">Post header 2</h3>
-                            <img src="./img/icon.png" alt="icon" class="icon" />
+                <div class="news">
+                    <img src="./img/planeta-pluton.jpg" alt="pluton">
+                    <h4 class="news__title">Pluton</h4>
+                    <div class="news-overlay">
+                        <div class="news-info">
+                            <h4 class="news-info__title">Title</h4>
+                            <p class="news-info__p">Weighing in at about 50,000 times the mass of our Sun, the black hole is smaller than the supermassive black holes (at millions or billions of solar masses) that lie at the cores of large galaxies, but larger than stellar-mass black holes formed by the collapse of a massive star.</p>
+                            <div class="news-logos">
+                                <img src="./img/xbox.png" alt="xbox">
+                                <img src="./img/ps4.png" alt="ps4">
+                            </div>
                         </div>
-                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                     </div>
                 </div>
-                <div class="item">
-                    <img class="img-card" src="./img/card3.png" alt="card3" />
-                    <div class="overlay">
-                        <div class="header-overlay">
-                            <h3 class="post-header">Post header 3</h3>
-                            <img src="./img/icon.png" alt="icon" class="icon" />
+                <div class="news">
+                    <img src="./img/planeta-neptun.jpg" alt="neptun">
+                    <h4 class="news__title">Neptun</h4>
+                    <div class="news-overlay">
+                        <div class="news-info">
+                            <h4 class="news-info__title">Title</h4>
+                            <p class="news-info__p">These so-called intermediate-mass black holes (IMBHs) are a long-sought "missing link" in black hole evolution. Though there have been a few other IMBH candidates, researchers consider these new observations the strongest evidence yet for mid-sized black holes in the universe.</p>
+                            <div class="news-logos">
+                                <img src="./img/xbox.png" alt="xbox">
+                                <img src="./img/ps4.png" alt="ps4">
+                            </div>
                         </div>
-                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="item">
-                    <img class="img-card" src="./img/card4.png" alt="card4" />
-                    <div class="overlay">
-                        <div class="header-overlay">
-                            <h3 class="post-header">Post header 4</h3>
-                            <img src="./img/icon.png" alt="icon" class="icon" />
-                        </div>
-                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                    </div>
+        </div>
+    </section>
+
+    <section>
+        <div id="modal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="image-content">
+        </div>
+        <div class="container pictures-block">
+            <h2 class="title">Spaceships</h2>
+            <div class="spaceships">
+                <div class="spaceship-block">
+                    <img class="spaceship-block__image" src="./img/spaceshuttle.jpg" alt="spaceshuttle">
                 </div>
-                <div class="item">
-                    <img class="img-card" src="./img/card5.png" alt="card5" />
-                    <div class="overlay">
-                        <div class="header-overlay">
-                            <h3 class="post-header">Post header 5</h3>
-                            <img src="./img/icon.png" alt="icon" class="icon" />
-                        </div>
-                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                    </div>
+                <div class="spaceship-block">
+                    <img class="spaceship-block__image" src="./img/spacecruiser.jpg" alt="spacecruiser">
                 </div>
             </div>
         </div>
-    </div>
-</section>
-<section class="promo-bg">
-    <div class="content promo">
-        <div class="monitor">
-            <img src="./img/mac.png" alt="mac"/>
-        </div>
-        <div class="description">
-            <h2 class="title-header">Title text</h2>
-            <ol class="list">
-                <li class="item-list">Duis aute irure dolor in reprehenderit<sup>1</sup> in voluptate velit</li>
-                <li class="item-list">Ullamco laboris nisi ut aliquip ex ea commodo consequat </li>
-                <li class="item-list">Ut enim ad minim veniam, quis nostrud exercitation </li>
-                <li class="item-list">Et dolore magna aliqua</li>
-                <li class="item-list">Sed doa eiusmod tempor<sup>2</sup> incididunt ut labore</li>
-                <li class="item-list">Lorem ipsum dolor sit amet<sup>3</sup> consectetur adipisicing elit</li>
-            </ol>
-        </div>
-    </div>
-</section>
-<section>
-    <div class="content disclamers">
-        <p><sup>1</sup> Reprehenderit - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
-        <p><sup>2</sup> Tempor - Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <p><sup>3</sup> Amet - Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-    </div>
-</section>
+    </section>
 
-<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
-<script src="./js/script.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+    <section>
+        <div class="carousel">
+            <div class="carousel-slide">
+                <img class="carousel-slide__image" src="./img/cosmos1.jpg" alt="cosmos1">
+                <div class="carousel-info">
+                    <h2 class="title">Title</h2>
+                    <div class="carousel-description">
+                        <p class="text">Astronomers have found the best evidence for the perpetrator of a cosmic homicide: a black hole of an elusive class known as "intermediate-mass," which betrayed its existence by tearing apart a wayward star that passed too close.</p>
+                    </div>
+                    <div class="carousel-info__count"><b>1</b> / 3</div>
+                </div>
+            </div>
 
+            <div class="carousel-slide">
+                <img class="carousel-slide__image" src="./img/cosmos2.jpg" alt="cosmos2">
+                <div class="carousel-info">
+                    <h2 class="title">Title</h2>
+                    <div class="carousel-description">
+                        <p class="text">Weighing in at about 50,000 times the mass of our Sun, the black hole is smaller than the supermassive black holes (at millions or billions of solar masses) that lie at the cores of large galaxies, but larger than stellar-mass black holes formed by the collapse of a massive star.</p>
+                    </div>
+                    <div class="carousel-info__count"><b>2</b> / 3</div>
+                </div>
+            </div>
+
+            <div class="carousel-slide">
+                <img class="carousel-slide__image" src="./img/cosmos3.jpg" alt="cosmos3">
+                <div class="carousel-info">
+                    <h2 class="title">Title</h2>
+                    <div class="carousel-description">
+                        <p class="text">These so-called intermediate-mass black holes (IMBHs) are a long-sought "missing link" in black hole evolution. Though there have been a few other IMBH candidates, researchers consider these new observations the strongest evidence yet for mid-sized black holes in the universe.</p>
+                    </div>
+                    <div class="carousel-info__count"><b>3</b>/ 3 </div>
+                </div>
+            </div>
+
+            <div class="dots">
+                <div class="dots__item" onclick="currentSlide(0)"><div class="progress"></div></div> 
+                <div class="dots__item" onclick="currentSlide(1)"><div class="progress"></div></div> 
+                <div class="dots__item" onclick="currentSlide(2)"><div class="progress"></div></div> 
+            </div>
+
+            <a class="carousel__prev" onclick="plusSlides(-1)"></a>
+            <a class="carousel__next" onclick="plusSlides(0)"></a>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <ul class="footer-menu">
+            <li class="footer-menu__item">News</li> 
+            <li class="footer-menu__item">Latest Activity</li> 
+            <li class="footer-menu__item">Game Video</li> 
+        </ul>
+        <div class="years-info">
+            <p>&copy; 2012 - 2020</p>
+        </div>
+    </footer>
+
+    <script src="modal.js"></script>
+    <script src="slider.js"></script>
 </body>
-</html>
+
